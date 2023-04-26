@@ -228,24 +228,7 @@ body {
   letter-spacing: 0.02em;
 }
 .work-examples {
-  padding-top: 0;
-}
-.examples-list {
-  display: flex;
-  gap: 24px;
-}
-.examples-item {
-  width: calc((100% - 48px) / 3);
-}
-.examples-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--title-color);
-  margin-bottom: 72px;
+  display: none;
 }
 .section-contacts {
   background-color: #f4f4fd;
@@ -924,5 +907,26 @@ body {
     color: var(--title-color);
     margin-bottom: 8px;
     text-align: center;
+  }
+  .work-examples {
+    display: block;
+    padding-top: 0;
+  }
+  .examples-list {
+    display: flex;
+    gap: 24px;
+  }
+  .examples-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .examples-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--title-color);
+    margin-bottom: 72px;
   }
 }

@@ -15,6 +15,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -37,9 +38,9 @@ body {
   padding-bottom: 120px;
 }
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1158px;
+  margin: 0 auto;
+  /* width: 1158px; */
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -196,10 +197,6 @@ body {
   justify-content: center;
   margin-bottom: 8px;
 }
-.features-icon {
-  /*width: 64px;
-  height: 64px;*/
-}
 .features-icon:hover,
 .features-icon:focus {
 }
@@ -246,15 +243,19 @@ body {
 }
 .section-contacts {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 .contacts-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
 }
 .contacts-items {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
+  /* flex-basis: calc((100% - 72px) / 4); */
+  flex-basis: 100%;
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 32px;
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229, 0px 1px 6px 0px #2e2f4214;
@@ -269,9 +270,6 @@ body {
   color: var(--title-color);
   margin-bottom: 72px;
 }
-/*.card-content {
-  padding: 32px 16px;
-}*/
 .contact-name {
   font-weight: 500;
   font-size: 20px;
@@ -288,8 +286,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  /*padding-top: 8px;
-  padding-bottom: 32px;*/
   margin-bottom: 8px;
 }
 .contacts-soc-list {
@@ -829,4 +825,45 @@ body {
 }
 .privacy-policy {
   color: #4d5ae5;
+}
+
+/* New versions section contacts*/
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+  .section-contacts > .container {
+    width: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .section-contacts > .container {
+    width: 582px;
+  }
+  .contacts-items {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .contacts-list {
+    row-gap: 62px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+  .section-contacts > .container {
+    width: 1158px;
+  }
+  .section-contacts {
+    padding: 120px 0;
+  }
+  .contacts-items {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  .contacts-list {
+    gap: 24px;
+  }
 }

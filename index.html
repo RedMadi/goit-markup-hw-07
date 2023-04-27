@@ -35,6 +35,65 @@
             <li><a class="link header-email-phone" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+        <button type="button" class="menu-button" data-menu-open>
+          <svg class="menu-open-icon" width="32px" height="22px">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="close-button-mob" data-menu-close>
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-navigation">
+            <ul class="mobile-list list">
+              <li class="mobile-item"><a class="mobile-link link" href="./index.html">Studio</a></li>
+              <li class="mobile-item"><a class="mobile-link link" href="./portfolio.html">Portfolio</a></li>
+              <li class="mobile-item"><a class="mobile-link link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="address-mob">
+            <ul class="address-list-mob list">
+              <li><a class="link mobile-phone" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+              <li><a class="link mobile-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+          </address>
+          <ul class="mobile-soc-list list">
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item">
+              <a href="" class="mobile-soc-link link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--Main content-->
@@ -45,7 +104,7 @@
         <button class="hero-button" data-modal-open type="button">Order Service</button>
       </section>
       <!--Features-->
-      <!-- <section class="section-features section">
+      <section class="section-features section">
         <div class="container">
           <h2 class="features-title visually-hidden">Features</h2>
           <ul class="features-list list">
@@ -89,20 +148,26 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Portfolio-->
-      <!-- <section class="work-examples section">
+      <section class="work-examples section">
         <div class="container">
           <h2 class="examples-title">What are we doing</h2>
           <ul class="examples-list list">
-            <li class="examples-item"><img src="./images/portfolio1.jpg" alt="Portfolio, available options" srcset="./images/portfolio1-2x.jpg 2x" width="360" height="300" /></li>
-            <li class="examples-item"><img src="./images/portfolio2.jpg" alt="Portfolio, available options" srcset="./images/portfolio2-2x.jpg 2x" width="360" height="300" /></li>
-            <li class="examples-item"><img src="./images/portfolio3.jpg" alt="Portfolio, available options" srcset="./images/portfolio3-2x.jpg 2x" width="360" height="300" /></li>
+            <li class="examples-item">
+              <img src="./images/portfolio1.jpg" alt="Portfolio, available options" srcset="./images/portfolio1-2x.jpg 2x" width="360" height="300" />
+            </li>
+            <li class="examples-item">
+              <img src="./images/portfolio2.jpg" alt="Portfolio, available options" srcset="./images/portfolio2-2x.jpg 2x" width="360" height="300" />
+            </li>
+            <li class="examples-item">
+              <img src="./images/portfolio3.jpg" alt="Portfolio, available options" srcset="./images/portfolio3-2x.jpg 2x" width="360" height="300" />
+            </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Contacts-->
-      <!-- <section class="section-contacts section">
+      <section class="section-contacts section">
         <div class="container">
           <h2 class="contacts-title">Our Team</h2>
           <ul class="contacts-list list">
@@ -256,9 +321,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Customers-->
-      <!-- <section class="section-customers section">
+      <section class="section-customers section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
@@ -306,10 +371,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!--Footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="footer-appeal">
           <a class="footer-logo link" href="./index.html">Web<span class="span-logo-footer">Studio</span></a>
@@ -361,9 +426,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!--Modal window-->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -417,7 +482,8 @@
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

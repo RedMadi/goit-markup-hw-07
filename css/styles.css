@@ -938,6 +938,9 @@ footer {
   .footer-logo {
     text-align: left;
   }
+  .footer-social {
+    margin-bottom: 0;
+  }
   .social-media-title {
     text-align: left;
   }
@@ -995,7 +998,7 @@ footer {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-    bottom: -38px;
+    bottom: -34px;
     left: 0;
   }
   .address {
@@ -1126,9 +1129,11 @@ footer {
     margin: 0 120px 0 0;
   }
   .footer > .container {
-    width: 100%;
+    width: 1125px;
   }
-
+  .footer-social {
+    margin-right: 80px;
+  }
   .subscribe-form {
     display: flex;
     flex-wrap: nowrap;

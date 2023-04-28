@@ -1125,6 +1125,9 @@ footer {
   .footer-appeal {
     margin: 0 120px 0 0;
   }
+  .footer > .container {
+    width: 100%;
+  }
 
   .subscribe-form {
     display: flex;

@@ -890,6 +890,9 @@ footer {
     font-size: 12px;
     line-height: 1.17;
   }
+  .mobile-soc-list {
+    gap: 56px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -1038,9 +1041,6 @@ footer {
   }
   .mob-menu {
     display: none;
-  }
-  .mobile-soc-list {
-    gap: 56px;
   }
 }
 @media screen and (min-width: 1158px) {
